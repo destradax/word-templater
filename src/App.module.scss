@@ -1,0 +1,22 @@
+.app {
+  padding: 20px;
+}
+
+.table {
+  table-layout: fixed;
+
+  th {
+    width: 200px;
+
+    &:first-child {
+      width: 50px;
+    }
+  }
+}
+
+.lawsuits {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+}
