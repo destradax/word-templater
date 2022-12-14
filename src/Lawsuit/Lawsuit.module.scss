@@ -1,12 +1,16 @@
 .lawsuit {
   align-items: flex-start;
-  border: 1px solid lightgrey;
   border-radius: 8px;
+  border: 1px solid lightgrey;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 10px;
+  gap: 20px;
   max-width: 100%;
+  padding: 10px;
+}
+
+.fileNameLabel {
+  font-weight: 500;
 }
 
 .scrollWrap {
@@ -28,20 +32,20 @@
 }
 
 .input {
-  width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
   border-radius: 4px;
   border: 1px solid lightgrey;
+  box-sizing: border-box;
   font-size: 1rem;
+  padding: 8px;
+  width: 100%;
 }
 
 .downloadButton {
-  padding: 10px;
   background-color: dodgerblue;
-  color: white;
   border-radius: 8px;
   border: none;
+  color: white;
+  padding: 10px;
 
   &:disabled {
     background-color: lightgrey;

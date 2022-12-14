@@ -40,7 +40,10 @@ const Lawsuit = ({ data, template }) => {
 
   return (
     <div className={styles.lawsuit}>
-      <div>Nombre del archivo: {fileName}</div>
+      <div>
+        <span className={styles.fileNameLabel}>Nombre del archivo:</span>
+        {fileName}
+      </div>
 
       <div className={styles.scrollWrap}>
         <table className={styles.table}>
@@ -73,7 +76,7 @@ const Lawsuit = ({ data, template }) => {
         disabled={!template}
         className={styles.downloadButton}
       >
-        DESCARGAR {fileName}
+        DESCARGAR
       </button>
     </div>
   );
