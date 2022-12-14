@@ -2,6 +2,7 @@ import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { read, utils } from "xlsx";
 import styles from "./App.module.scss";
+import example from "./assets/plantilla_datos.xlsx?url";
 import { STATUS } from "./constants";
 import Lawsuit from "./Lawsuit/Lawsuit";
 
@@ -68,6 +69,9 @@ const App = () => {
           onChange={handleReadExcelFile}
           accept=".xls,.xlsx"
         />
+        <a href={example} download className={styles.exampleFileLink}>
+          Descargar archivo de ejemplo
+        </a>
       </div>
 
       {!!lawsuits.length && (
