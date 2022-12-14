@@ -1,22 +1,14 @@
 .app {
   padding: 20px;
-}
-
-.table {
-  table-layout: fixed;
-
-  th {
-    width: 200px;
-
-    &:first-child {
-      width: 50px;
-    }
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .lawsuits {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  overflow: auto;
+  gap: 20px;
+  grid-column: span 2;
+  max-width: 100%;
 }
